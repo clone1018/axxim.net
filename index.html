@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luke Strickland</title>
+  <style>
+    :root {
+      --font-serif: "Georgia", "Times New Roman", serif;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --text-color: #2c2c2c;
+      --accent-color: #444;
+      --bg-color: #fdfdfd;
+      --link-underline: 1px dotted #999;
+    }
+
+    body {
+      margin: 0;
+      padding: 4rem 2rem;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: var(--font-serif);
+      line-height: 1.75;
+      max-width: 720px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      /* margin-bottom: 0.25rem; */
+      margin-bottom: 0px;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      color: #666;
+      /* font-family: var(--font-sans); */
+      margin-bottom: 2rem;
+      margin-top: 0px;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+      border-bottom: var(--link-underline);
+    }
+
+    a:hover {
+      color: black;
+      border-bottom: 1px solid #666;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .projects a {
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    .contact {
+      font-family: var(--font-sans);
+      font-weight: 500;
+    }
+
+    .email {
+      font-weight: 400;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 2rem 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Luke Strickland</h1>
+  <p class="subtitle">Technologist by day, craftsman by night.</p>
+
+  <div class="section">
+    <p>
+      Currently building <a href="https://www.classic.com/">CLASSIC.COM</a>, a marketplace for classic vehicles.<br>
+      Nights and weekends, I’m restoring buildings through <a href="https://lsrproperties.org/">LSR Properties LLC</a>.
+    </p>
+  </div>
+
+  <div class="section">
+    <p><a href="http://axxim.net/~clone1018/personal/resume/">View My Resume →</a></p>
+  </div>
+
+  <div class="section projects">
+    <p><strong>Other Projects</strong></p>
+    <a href="https://glimesh.tv/">Glimesh</a>
+    <a href="https://websubhub.com/">WebSubHub</a>
+    <a href="https://minotar.net/">Minotar</a>
+  </div>
+
+  <div class="section contact">
+    Contact: <span class="email">luke@axxim.net</span>
+  </div>
+
+</body>
+</html>
