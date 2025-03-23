@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Luke Strickland</title>
+    <style type="text/css">
+        html,
+        body,
+        div,
+        span,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        cite,
+        code,
+        del,
+        em,
+        img,
+        ins,
+        strong,
+        sub,
+        sup,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent
+        }
+
+        body {
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            font-size: 62.5%;
+            line-height: 1;
+            color: #262626;
+            background: #f9f9f9
+        }
+
+        p,
+        ul,
+        ol,
+        dl,
+        table,
+        blockquote {
+            margin: 0 0 1.5em;
+            line-height: 1.5
+        }
+
+        p,
+        li,
+        dt,
+        dd,
+        table {
+            font-size: 1.4em
+        }
+
+        strong {
+            font-weight: 700
+        }
+
+        em {
+            font-style: italic
+        }
+
+        a:link {
+            color: #444
+        }
+
+        a:visited {
+            color: #666
+        }
+
+        a:hover {
+            color: #f9f9f9;
+            background: #444
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0 0 .5em;
+            line-height: 1;
+            font-weight: 400;
+            color: #000
+        }
+
+        h1 {
+            float: left;
+            margin: 0;
+            font-size: 43px;
+            font-variant: small-caps;
+            text-shadow: 0 1px 0 #fff
+        }
+
+        h1 em {
+            display: block;
+            font-size: 15px;
+            font-style: normal
+        }
+
+        h2 {
+            margin-left: -136px;
+            float: left;
+            font-size: 1.8em;
+            font-variant: small-caps
+        }
+
+        h2 abbr {
+            position: relative;
+            top: -1px;
+            font-style: normal;
+            color: #999
+        }
+
+        h3 {
+            position: relative;
+            font-size: 1.8em
+        }
+
+        h3 span {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-family: 'Palatino Linotype', Palatino, Georgia, Times, 'Times New Roman', serif;
+            font-size: .75em;
+            color: #333
+        }
+
+        h4 {
+            margin: 0 0 1em;
+            font-size: 1.6em;
+            font-variant: small-caps
+        }
+
+        h5 {
+            font-size: 1.5em;
+            font-style: italic
+        }
+
+        h6 {
+            font-size: 1.4em;
+            font-weight: 700
+        }
+
+        ol,
+        ul {
+            margin: 0 0 2.1em 2.1em
+        }
+
+        ul {
+            list-style: disc
+        }
+
+        ul ul {
+            list-style: circle
+        }
+
+        ul ul ul {
+            list-style: square
+        }
+
+        ol {
+            list-style: decimal
+        }
+
+        ol ol,
+        {
+        list-style: lower-alpha
+        }
+
+        ol ol ol {
+            list-style: lower-roman
+        }
+
+        li ul,
+        li ol {
+            margin-bottom: 2.1em;
+            font-size: .714em
+        }
+
+        li {
+            margin: 0
+        }
+
+        abbr {
+            font-family: Baskerville, Palatino, 'Palatino Linotype';
+            font-style: italic
+        }
+
+        #page {
+            width: 680px;
+            margin: 0 auto
+        }
+
+        #main {
+            padding: 0;
+            border-top: 1px solid #333
+        }
+
+        .section {
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            padding: 2.6em 0 .5em 136px;
+            border-bottom: 1px solid #999
+        }
+
+        .section a {
+            font-style: italic;
+            font-family: 'Palatino Linotype', Palatino, Georgia, Times, 'Times New Roman', serif;
+            text-decoration: none;
+            border-bottom: 1px solid #bbb
+        }
+
+        .section a:visited {
+            border-bottom: 1px dotted #bbb
+        }
+
+        .section ul {
+            text-align: left
+        }
+
+        .job {
+            margin: 0 0 2em;
+            border-bottom: 1px dotted #999
+        }
+
+        #innovative-imaging {
+            margin-bottom: 0;
+            border: 0
+        }
+
+        #experience {
+            margin-bottom: 0
+        }
+
+        #header {
+            position: relative;
+            margin: 0 0 1px;
+            padding: 2em 0 18px;
+            border-bottom: 2px solid #333
+        }
+
+        #header:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+            zoom: 1
+        }
+
+        #header p {
+            float: right;
+            margin: 0;
+            padding: 2px 0 0;
+            font-family: 'Palatino Linotype', Palatino, Baskerville, Times, 'Times New Roman', Georgia, serif;
+            font-size: 1.2em;
+            line-height: 14px
+        }
+
+        #header p span {
+            display: block
+        }
+
+        #header .pdf {
+            position: absolute;
+            right: 156px;
+            top: 35px;
+            width: 116px
+        }
+
+        #header .pdf a {
+            display: block;
+            width: 116px;
+            outline: 1px solid #999;
+            font-size: 14px;
+            line-height: 2;
+            font-variant: small-caps;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            background: #ddd
+        }
+
+        #header .pdf a:hover {
+            outline-color: #000;
+            color: #eee;
+            background: #333
+        }
+
+        #footer {
+            clear: both;
+            padding: 1em 0 0;
+            border-top: 3px double #999;
+            font-family: 'Palatino Linotype', Palatino, Baskerville, Times, 'Times New Roman', Georgia, serif;
+            text-align: right;
+            font-style: italic
+        }
+
+        #profile ul,
+        #skills ul {
+            float: left;
+            margin-left: 0;
+            list-style: none
+        }
+
+        #profile li,
+        #skills li {
+            float: left;
+            width: 136px
+        }
+
+        @media only screen and (max-width:679px) {
+            #page {
+                width: auto;
+                margin-right: 8px;
+                margin-left: 8px
+            }
+
+            h1 {
+                float: none;
+                margin: 0 0 .25em
+            }
+
+            h2 {
+                float: none;
+                margin-left: 0;
+                margin-bottom: 1em;
+                padding-bottom: .5em;
+                border-bottom: 1px dotted #666
+            }
+
+            h3 span {
+                display: block;
+                position: relative;
+                right: auto;
+                bottom: auto;
+                margin-top: 5px
+            }
+
+            h4 {
+                margin-bottom: .5em
+            }
+
+            #header p {
+                float: none
+            }
+
+            #profile ul,
+            #skills ul {
+                float: none;
+                margin: 0
+            }
+
+            #profile li {
+                float: none;
+                width: auto
+            }
+
+            .section {
+                border-color: #333;
+                padding: .6em 0 1.6em
+            }
+
+            #profile.section a[href] {
+                display: block;
+                padding: .5em 0;
+                border: 0;
+                text-decoration: underline;
+                font-style: normal
+            }
+
+            #profile.section a[href]:after {
+                content: " ~ " attr(href);
+                font-style: italic
+            }
+        }
+
+        @media print {
+            * {
+                text-shadow: none;
+                color: #000;
+                background: transparent
+            }
+
+            #profile li {
+                float: none;
+                width: auto
+            }
+
+            #profile a[href] {
+                display: block;
+                padding: 0;
+                border: 0;
+                text-decoration: underline;
+                font-style: normal
+            }
+
+            #profile a[href]:after {
+                content: " ~ " attr(href);
+                font-style: italic
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <div id="header">
+            <h1>
+                Luke Strickland
+                <!-- <em>Founder, Director of Engineering, Senior Software Engineer</em> -->
+            </h1>
+            <p>
+                <span>(724) 640-1575</span>
+                <span>124 S Church St</span>
+                <span>Mt Pleasant, PA 15666</span>
+                <span><a href="mailto:luke@axxim.net">luke@axxim.net</a></span>
+            </p>
+        </div>
+        <div id="main">
+            <div class="section" id="profile">
+                <h2><abbr title="section">§</abbr> Profile</h2>
+                <p>
+                    I'm a Senior Software Engineer &amp; manager of engineering teams &amp; organizations with over 11 years of hands on development and high level strategic vision. My unique accelerated experience has given me insight into every role of an engineering organization which prepares me to lead with a strong vision, but the tact technical teams need.
+                </p>
+                <p>
+                    I'm a passionate technologist that believes in a very product-oriented approach to ensure business needs are accomplished. My approach to software engineering is found in the word engineer, as I believe it is our jobs to strive for quality products that are more than the specifications. I believe very strongly in being open, clear, and transparent with everyone who I interact with.
+                </p>
+                <ul>
+                    <li><a target="_blank" href="http://axxim.net">Website</a></li>
+                    <li><a target="_blank" href="http://github.com/clone1018">GitHub</a></li>
+                    <li><a target="_blank" href="http://linkedin.com/in/clone1018">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="section" id="skills">
+                <h2><abbr title="section">&sect;</abbr> Skills</h2>
+                <ul>
+                    <li>Elixir</li>
+                    <li>PostgreSQL</li>
+                    <li>AWS</li>
+                    <li>Testing</li>
+
+                    <li>Golang</li>
+                    <li>MySQL</li>
+                    <li>Git/SVN</li>
+                    <li>Open Source</li>
+
+                    <li>JavaScript</li>
+                    <li>Redis</li>
+                    <li>Linux</li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="section" id="experience">
+                <h2><abbr title="section">&sect;</abbr> Experience</h2>
+                <div class="job" id="glimesh">
+                    <h3>Classic.com - Miami, Fl (Remote) <span>August 2021 - Current</span></h3>
+                    <h4>Senior Software Engineer</h4>
+                    <p>
+                        Classic.com is an data platform focused on empowering classic car buyers, sellers, and enthusiasts with insights to inform their next purchase or sale. Filled with vehicle prices, conditions, attributes, and history from over 100 different auction houses & dealers, Classic.com has amassed over a decade of data for 400,000+ classic & collectable vehicles.
+                    </p>
+                    <p>
+                        As the first Elixir engineer at Classic.com, my primary responsibility was converting the legacy Next.js powered site into a fast, reliable, scalable platform powered by Elixir & Phoenix Live View. Due to this conversion, the site performance and indexability increased dramatically doubling the growth of Classic.com since we completed the project. In addition to development, I was also responsible for training many of the team on the Elixir programming language and Phoenix Live View paradigms.
+                    </p>
+                    <p>
+                        Some of my other major feats include:
+                    </p>
+                    <ul>
+                        <li>Reducing overall site downtime & production issues while improving page load speed.</li>
+                        <li>Simplified deployment strategy by introducing CI/CD for staging & production pipelines.</li>
+                        <li>Implemented a complex multi-layer filtering system for searches.</li>
+                    </ul>
+                </div>
+                <div class="job" id="glimesh">
+                    <h3>Glimesh.tv - Pittsburgh, Pa <span>July 2020 - Current</span></h3>
+                    <h4>Founder</h4>
+                    <p>
+                        Glimesh is a next-gen live streaming platform for content creators to share their experiences with the world. The platform focuses on providing lightning-fast live streams with a systematic approach to fairness for creators. I founded Glimesh in 2020 after the famous platform Mixer was shut down and have been working on it since.
+                    </p>
+                    <p>
+                        As the founder of Glimesh I am responsible for everything we do, but ultimately that means I spend a lot of my time architecting and developing our core software. My major technical accomplishment so far has building a completely real time public API based around Elixir's pubsub systems. Currently do we about 10 million API requests per month.
+                    </p>
+                    <p>
+                        Some of my other major feats include:
+                    </p>
+                    <ul>
+                        <li>Developed a proof of concept streaming site that was up and running in 22 days for 300 live viewers.</li>
+                        <li>Designed &amp; deployed our devops infrastructure to enable us to build a highly available site.</li>
+                        <li>Organized 20+ contributors to work together to build the platform.</li>
+                        <li>Maintain a stable 70% end to end test coverage of the main website.</li>
+                        <li>Monitor and maintain a network of 40+ servers responsible for API &amp; video traffic.</li>
+                    </ul>
+                </div>
+                <div class="job" id="idelic">
+                    <h3>Idelic - Pittsburgh, Pa <span>August 2018 - November 2020</span></h3>
+                    <h4>Director of Engineering, Senior Software Engineer</h4>
+                    <p>
+                        Idelic is a business to business software as a service provider in the trucking industry with one major goal: prevent accidents on our roads. I joined Idelic as employee number 5 as a Senior Software Engineer focused on building our internal ETL platform. Since then I have grown into managing small teams, and eventually the entire engineering department.
+                    </p>
+                    <p>
+                        As Director of Engineering at a startup, my responsibilities range from being a hands on engineering manager for one team, to managing senior leaders who manage other engineering teams. I wear many hats, which has made me a subject matter expert for all of our projects. These combination of skills ensured that I provide maximum value to the business in delivering high level goals, and can still write some code to get something out.
+                    </p>
+                    <p>
+                        Some of my major feats in this position include:
+                    </p>
+                    <ul>
+                        <li>Architected our state-of-the-art ETL pipeline to help consolidate disperse customer data into one managable location.</li>
+                        <li>Implemented a unit testing framework to guide our development teams in a direction of quality, well understood code.</li>
+                        <li>Implemented Agile development lifecycle processes for that introduced consistency to our deployments and quality to our features</li>
+                        <li>Communicated with external and internal stakeholders to gather requirements, define goals, and identify risks</li>
+                        <li>Collaboratively built engineering best practices with version control, testing and QA</li>
+                        <li>Deployed strategy for breaking down our monolith into microservices to ensure we can scale with the customers need</li>
+                        <li>Created security and compliance policies for HIPAA-related data and developed a path for a SOC audit</li>
+                    </ul>
+                </div>
+                <div class="job" id="eyemart-express">
+                    <h3>Eyemart Express - Farmers Branch, Tx <span>August 2012 - August 2018</span></h3>
+                    <h4>Senior Software Developer, DevOps</h4>
+                    <p>
+                        Eyemart Express is the 7th largest optical retail in the United States with over 140 locations in 30 states. At Eyemart Express I focus on optic specific applications (inventory management, optical oriented PoS, lab management systems). I also worked on several front end projects, like a patient scheduling system and e-commerce websites.
+                    </p>
+                    <p>
+                        In Q2'15 Eyemart Express focused on growing their infrastructure and disaster recovery. My work since then has been building out a reliable AWS environment for running our most taxing business processes.
+                    </p>
+                    <p>
+                        In 2016-2017 I had the opportunity to lead a team to create a new Point of Sale system for our stores. I was responsible for core development, organizing and prioritizing our goals.
+                    </p>
+                    <p>
+                        Some of my major feats as a developer at this position include:
+                    </p>
+                    <ul>
+                        <li>Refactored a business metric & reporting engine to help our Operations & Marketing teams</li>
+                        <li>Created a customer deduplication and CRM management tool with product recommendation features</li>
+                        <li>Designed & implemented a digital signage system</li>
+                        <li>Creating a 3D virtual try on with JavaScript that utilizes your computers webcam to preview glasses on your face</li>
+                        <li>Worked with a piece of software that handles figuring out the PD (Pupillary Distance) of the eyes using a webcam and C++</li>
+                        <li>Built a complete front to back order fulfillment system</li>
+                        <li>Deployed several major software upgrades to 180+ physical locations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Luke Strickland ~ <a href="mailto:luke@axxim.net">luke@axxim.net</a> ~ (724) 640-1575
+        </div>
+    </div>
+</body>
+
+</html>
