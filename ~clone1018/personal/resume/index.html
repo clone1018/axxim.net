@@ -333,18 +333,24 @@
             font-style: italic
         }
 
-        #profile ul,
-        #skills ul {
+        #profile ul {
             float: left;
             margin-left: 0;
             list-style: none
         }
 
-        #profile li,
-        #skills li {
+        #profile li {
             float: left;
             width: 136px
         }
+
+        #skills ul {
+            list-style: none;
+            margin-left: 0;
+            float: left;
+        }
+
+        #skills li {}
 
         @media only screen and (max-width:679px) {
             #page {
@@ -445,7 +451,7 @@
         <div id="header">
             <h1>
                 Luke Strickland
-                <!-- <em>Founder, Director of Engineering, Senior Software Engineer</em> -->
+                <em>Founder, Director of Engineering, Senior Software Engineer</em>
             </h1>
             <p>
                 <span>(724) 640-1575</span>
@@ -458,10 +464,7 @@
             <div class="section" id="profile">
                 <h2><abbr title="section">§</abbr> Profile</h2>
                 <p>
-                    I'm a Senior Software Engineer &amp; manager of engineering teams &amp; organizations with over 11 years of hands on development and high level strategic vision. My unique accelerated experience has given me insight into every role of an engineering organization which prepares me to lead with a strong vision, but the tact technical teams need.
-                </p>
-                <p>
-                    I'm a passionate technologist that believes in a very product-oriented approach to ensure business needs are accomplished. My approach to software engineering is found in the word engineer, as I believe it is our jobs to strive for quality products that are more than the specifications. I believe very strongly in being open, clear, and transparent with everyone who I interact with.
+                    Fractional CTO and Senior Software Engineer with 15+ years of experience leading engineering teams and delivering scalable, strategic software solutions. I bring hands-on expertise across the tech stack with a strong ability to translate business goals into technical roadmaps. Experienced in growing organizations, mentoring talent, and driving product-focused development across early-stage startups and mature companies. Passionate about building transparent, sustainable engineering cultures and accelerating business growth through smart technology decisions.
                 </p>
                 <ul>
                     <li><a target="_blank" href="http://axxim.net">Website</a></li>
@@ -472,108 +475,63 @@
             <div class="section" id="skills">
                 <h2><abbr title="section">&sect;</abbr> Skills</h2>
                 <ul>
-                    <li>Elixir</li>
-                    <li>PostgreSQL</li>
-                    <li>AWS</li>
-                    <li>Testing</li>
-
-                    <li>Golang</li>
-                    <li>MySQL</li>
-                    <li>Git/SVN</li>
-                    <li>Open Source</li>
-
-                    <li>JavaScript</li>
-                    <li>Redis</li>
-                    <li>Linux</li>
-                    <li></li>
+                    <li><strong>Leadership & Strategy:</strong><br> Fractional CTO, Team Management, Technical Roadmaps, Mentorship</li>
+                    <li><strong>Engineering & DevOps:</strong><br> Elixir, Golang, PostgreSQL, AWS, CI/CD, Redis, Docker, Linux</li>
+                    <li><strong>Product & Platform:</strong><br> API Design, Real-Time Systems, Microservices, ETL Pipelines, Phoenix LiveView</li>
+                    <li><strong>Collaboration:</strong><br> Cross-Functional Teams, Agile/Scrum, Compliance (HIPAA/SOC)</li>
                 </ul>
             </div>
             <div class="section" id="experience">
                 <h2><abbr title="section">&sect;</abbr> Experience</h2>
                 <div class="job" id="glimesh">
-                    <h3>Classic.com - Miami, Fl (Remote) <span>August 2021 - Current</span></h3>
-                    <h4>Senior Software Engineer</h4>
+                    <h3>CLASSIC.COM - <small>Miami, FL</small><span>August 2021 - Current</span></h3>
+                    <h4>Chief Technology Officer, Senior Software Engineer</h4>
                     <p>
-                        Classic.com is an data platform focused on empowering classic car buyers, sellers, and enthusiasts with insights to inform their next purchase or sale. Filled with vehicle prices, conditions, attributes, and history from over 100 different auction houses & dealers, Classic.com has amassed over a decade of data for 400,000+ classic & collectable vehicles.
+                        CLASSIC.COM is a data platform helping classic car buyers, sellers, and enthusiasts make informed decisions using vehicle data from 1400+ auction houses and dealers.
                     </p>
                     <p>
-                        As the first Elixir engineer at Classic.com, my primary responsibility was converting the legacy Next.js powered site into a fast, reliable, scalable platform powered by Elixir & Phoenix Live View. Due to this conversion, the site performance and indexability increased dramatically doubling the growth of Classic.com since we completed the project. In addition to development, I was also responsible for training many of the team on the Elixir programming language and Phoenix Live View paradigms.
+                        I led the company’s technical transformation, migrating from a legacy Next.js stack to a scalable Elixir & Phoenix LiveView platform. This overhaul significantly improved performance, reliability, and SEO, directly contributing to company growth. I also mentored engineers, introduced CI/CD workflows, and shaped long-term product and technical strategy.
                     </p>
-                    <p>
-                        Some of my other major feats include:
-                    </p>
-                    <ul>
-                        <li>Reducing overall site downtime & production issues while improving page load speed.</li>
-                        <li>Simplified deployment strategy by introducing CI/CD for staging & production pipelines.</li>
-                        <li>Implemented a complex multi-layer filtering system for searches.</li>
-                    </ul>
                 </div>
                 <div class="job" id="glimesh">
-                    <h3>Glimesh.tv - Pittsburgh, Pa <span>July 2020 - Current</span></h3>
+                    <h3>Glimesh.tv - <small>Pittsburgh, PA</small><span>July 2020 - July 2023</span></h3>
                     <h4>Founder</h4>
                     <p>
-                        Glimesh is a next-gen live streaming platform for content creators to share their experiences with the world. The platform focuses on providing lightning-fast live streams with a systematic approach to fairness for creators. I founded Glimesh in 2020 after the famous platform Mixer was shut down and have been working on it since.
+                        Glimesh was a next-gen live streaming platform focused on low-latency video, creator fairness, and community-driven development.
                     </p>
                     <p>
-                        As the founder of Glimesh I am responsible for everything we do, but ultimately that means I spend a lot of my time architecting and developing our core software. My major technical accomplishment so far has building a completely real time public API based around Elixir's pubsub systems. Currently do we about 10 million API requests per month.
+                        I founded and architected the platform, designing a real-time API using Elixir’s pub/sub systems, handling over 10M monthly requests. I managed infrastructure across 40+ servers, led open-source collaboration with 20+ contributors, and built a scalable platform with strong test coverage and high availability.
                     </p>
-                    <p>
-                        Some of my other major feats include:
-                    </p>
-                    <ul>
-                        <li>Developed a proof of concept streaming site that was up and running in 22 days for 300 live viewers.</li>
-                        <li>Designed &amp; deployed our devops infrastructure to enable us to build a highly available site.</li>
-                        <li>Organized 20+ contributors to work together to build the platform.</li>
-                        <li>Maintain a stable 70% end to end test coverage of the main website.</li>
-                        <li>Monitor and maintain a network of 40+ servers responsible for API &amp; video traffic.</li>
-                    </ul>
                 </div>
                 <div class="job" id="idelic">
-                    <h3>Idelic - Pittsburgh, Pa <span>August 2018 - November 2020</span></h3>
+                    <h3>Idelic - <small>Pittsburgh, PA</small><span>August 2018 - November 2020</span></h3>
                     <h4>Director of Engineering, Senior Software Engineer</h4>
                     <p>
-                        Idelic is a business to business software as a service provider in the trucking industry with one major goal: prevent accidents on our roads. I joined Idelic as employee number 5 as a Senior Software Engineer focused on building our internal ETL platform. Since then I have grown into managing small teams, and eventually the entire engineering department.
+                        Idelic builds safety and compliance software for the trucking industry, helping fleets prevent accidents and manage risk.
                     </p>
                     <p>
-                        As Director of Engineering at a startup, my responsibilities range from being a hands on engineering manager for one team, to managing senior leaders who manage other engineering teams. I wear many hats, which has made me a subject matter expert for all of our projects. These combination of skills ensured that I provide maximum value to the business in delivering high level goals, and can still write some code to get something out.
+                        I built the company’s ETL pipeline, then scaled into leadership—managing teams, defining technical strategy, and standardizing development workflows. I implemented agile practices, guided architecture (monolith-to-microservices), and led HIPAA/SOC compliance initiatives while staying hands-on with mission-critical codebases.
                     </p>
-                    <p>
-                        Some of my major feats in this position include:
-                    </p>
-                    <ul>
-                        <li>Architected our state-of-the-art ETL pipeline to help consolidate disperse customer data into one managable location.</li>
-                        <li>Implemented a unit testing framework to guide our development teams in a direction of quality, well understood code.</li>
-                        <li>Implemented Agile development lifecycle processes for that introduced consistency to our deployments and quality to our features</li>
-                        <li>Communicated with external and internal stakeholders to gather requirements, define goals, and identify risks</li>
-                        <li>Collaboratively built engineering best practices with version control, testing and QA</li>
-                        <li>Deployed strategy for breaking down our monolith into microservices to ensure we can scale with the customers need</li>
-                        <li>Created security and compliance policies for HIPAA-related data and developed a path for a SOC audit</li>
-                    </ul>
                 </div>
                 <div class="job" id="eyemart-express">
-                    <h3>Eyemart Express - Farmers Branch, Tx <span>August 2012 - August 2018</span></h3>
+                    <h3>Eyemart Express - <small>Farmers Branch, TX</small><span>August 2012 - August 2018</span></h3>
                     <h4>Senior Software Developer, DevOps</h4>
                     <p>
-                        Eyemart Express is the 7th largest optical retail in the United States with over 140 locations in 30 states. At Eyemart Express I focus on optic specific applications (inventory management, optical oriented PoS, lab management systems). I also worked on several front end projects, like a patient scheduling system and e-commerce websites.
+                        Eyemart Express is a national optical retailer with over 140 locations across 30 states.
                     </p>
                     <p>
-                        In Q2'15 Eyemart Express focused on growing their infrastructure and disaster recovery. My work since then has been building out a reliable AWS environment for running our most taxing business processes.
+                        I led key software and infrastructure projects, including a custom PoS system and e-commerce features. I migrated critical services to AWS, built innovative customer tools like a 3D virtual try-on, and oversaw software deployments across 180+ locations, driving modernization at scale.
                     </p>
+                </div>
+            </div>
+            <div class="section" id="volunteerism">
+                <h2><abbr title="section">&sect;</abbr> Volunteer</h2>
+                <div class="job" id="mpvfd">
+                    <h3>Mount Pleasant Volunteer Fire Department<span>August 2021 - Current</span></h3>
+                    <h4>Firefighter, Secretary Board Member</h4>
                     <p>
-                        In 2016-2017 I had the opportunity to lead a team to create a new Point of Sale system for our stores. I was responsible for core development, organizing and prioritizing our goals.
+                        Volunteer any additional time I have serving with the Mount Pleasant Volunteer Fire Department as a firefighter, vehicle rescue tech, and board member. Currently hold a Pro Board Firefighter I certificate.
                     </p>
-                    <p>
-                        Some of my major feats as a developer at this position include:
-                    </p>
-                    <ul>
-                        <li>Refactored a business metric & reporting engine to help our Operations & Marketing teams</li>
-                        <li>Created a customer deduplication and CRM management tool with product recommendation features</li>
-                        <li>Designed & implemented a digital signage system</li>
-                        <li>Creating a 3D virtual try on with JavaScript that utilizes your computers webcam to preview glasses on your face</li>
-                        <li>Worked with a piece of software that handles figuring out the PD (Pupillary Distance) of the eyes using a webcam and C++</li>
-                        <li>Built a complete front to back order fulfillment system</li>
-                        <li>Deployed several major software upgrades to 180+ physical locations</li>
-                    </ul>
                 </div>
             </div>
         </div>
